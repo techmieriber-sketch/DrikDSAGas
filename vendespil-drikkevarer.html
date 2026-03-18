@@ -40,7 +40,7 @@
       .bg-media {
         position: fixed;
         inset: 0;
-        z-index: -1;
+        z-index: 0;
         background: #0f1b24;
         overflow: hidden;
       }
@@ -52,6 +52,7 @@
       }
       .page-shell {
         position: relative;
+        z-index: 1;
         min-height: 100vh;
         padding: 2rem;
         display: flex;
@@ -60,6 +61,8 @@
       }
 
       .app {
+        position: relative;
+        z-index: 1;
         min-height: calc(100vh - 44px);
         width: min(980px, 100%);
         background: rgba(255, 255, 255, 0.95);
@@ -144,6 +147,8 @@
       }
 
       .content {
+        position: relative;
+        z-index: 1;
         padding: 16px;
       }
       .audio-note {
